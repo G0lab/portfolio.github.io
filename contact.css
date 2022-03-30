@@ -1,0 +1,502 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  font-family: "Secular One", sans-serif;
+  background: url(./img/Dark-theme.jpg);
+  background-size: cover;
+  background-size: no-repeat;
+}
+.header {
+  text-align: center;
+  padding: 3rem;
+  color: #ffcaa6;
+}
+.header::before {
+  content: "CONTACT ME";
+  position: absolute;
+  font-size: 4rem;
+  font-weight: 700;
+  opacity: 0.1;
+  top: 1.5rem;
+  right: 3rem;
+}
+.info > h2 {
+  margin-top: -1rem;
+}
+.name {
+  color: #41c200;
+}
+.contact {
+  color: #ffcaa6;
+  display: grid;
+  padding: 2rem;
+  gap: 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.add {
+  display: grid;
+  grid-template-columns: 8% 30% 60%;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.details > form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+form input {
+  border-radius: 20px;
+  height: 2rem;
+}
+#subject,
+#message {
+  grid-column: span 2;
+}
+#message {
+  height: 12rem;
+}
+.download {
+  width: 12rem;
+  height: 2rem;
+  display: flex;
+  border: 0.125rem solid #41c200;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1.875rem;
+  background: black;
+  color: #ffcaa6;
+  font-size: 0.7;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 1rem;
+}
+.download-btn {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.download:hover {
+  color: #41c200;
+  border: 0.1875rem solid #41c200;
+}
+.buttons {
+  display: flex;
+  gap: 4rem;
+  padding: 2rem;
+}
+.wrapper {
+  height: 3.4375rem;
+  width: 3.4375rem;
+  background-color: #0c242b;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  font-size: 1.875rem;
+}
+.wrapper:hover {
+  background-color: #41c200;
+  transition: 250ms ease-in-out;
+  color: black;
+}
+.mode {
+  height: 5rem;
+  display: fixed;
+  position: absolute;
+  right: -2rem;
+  top: 1rem;
+  overflow: auto;
+}
+.switch {
+  height: 3.4375rem;
+  width: 3.4375rem;
+  display: grid;
+  place-content: center;
+  margin-right: 4rem;
+  cursor: pointer;
+  background-color: #0c242b;
+  border-radius: 50%;
+  color: #ffcaa6;
+  font-size: 1.875rem;
+}
+.switch:hover {
+  background-color: #ffcaa6;
+  transition: 250ms ease-in-out;
+  color: #0c242b;
+}
+@media only screen and (min-device-width: 480px) {
+  .contact {
+    color: #ffcaa6;
+    display: grid;
+    padding: 2rem;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .add {
+    display: grid;
+    grid-template-columns: 8% 30% 60%;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .details > form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  form input {
+    border-radius: 20px;
+    height: 2.5rem;
+  }
+  .download {
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    border: 0.125rem solid #41c200;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1.875rem;
+    background: transparent;
+    color: #ffcaa6;
+    font-size: 0.9375;
+    font-weight: 750;
+    cursor: pointer;
+  }
+  .download-btn {
+    height: 2.8125rem;
+    width: 2.8125rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.872rem;
+  }
+  .download:hover {
+    color: #41c200;
+    border: 0.1875rem solid #41c200;
+  }
+  .header::before {
+    content: "CONTACT ME";
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 700;
+    opacity: 0.1;
+    top: 3rem;
+    right: 5rem;
+  }
+}
+@media only screen and (min-device-width: 551px) {
+  .contact {
+    color: #ffcaa6;
+    display: grid;
+    padding: 2rem;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .add {
+    display: grid;
+    grid-template-columns: 8% 30% 60%;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .header::before {
+    content: "CONTACT ME";
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 700;
+    opacity: 0.1;
+    top: 3rem;
+    right: 5rem;
+  }
+  .download {
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    border: 0.125rem solid #41c200;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1.875rem;
+    background: transparent;
+    color: #ffcaa6;
+    font-size: 0.9375;
+    font-weight: 750;
+    cursor: pointer;
+  }
+  .download-btn {
+    height: 2.8125rem;
+    width: 2.8125rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.872rem;
+  }
+  .download:hover {
+    color: #41c200;
+    border: 0.1875rem solid #41c200;
+  }
+  .buttons {
+    display: flex;
+    gap: 5rem;
+    padding: 2rem;
+  }
+  .details > form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  form input {
+    border-radius: 20px;
+    height: 2.5rem;
+  }
+}
+@media only screen and (min-device-width: 720px) {
+  .contact {
+    color: #ffcaa6;
+    display: grid;
+    padding: 2rem;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .add {
+    display: grid;
+    grid-template-columns: 8% 30% 60%;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .header::before {
+    content: "CONTACT ME";
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 700;
+    opacity: 0.1;
+    top: 3rem;
+    right: 11rem;
+  }
+  .download {
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    border: 0.125rem solid #41c200;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1.875rem;
+    background: transparent;
+    color: #ffcaa6;
+    font-size: 0.9375;
+    font-weight: 750;
+    cursor: pointer;
+  }
+  .download-btn {
+    height: 2.8125rem;
+    width: 2.8125rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.872rem;
+  }
+  .download:hover {
+    color: #41c200;
+    border: 0.1875rem solid #41c200;
+  }
+  .buttons {
+    display: flex;
+    gap: 9rem;
+    padding: 2rem;
+  }
+  .details > form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  form input {
+    border-radius: 20px;
+    height: 3rem;
+  }
+}
+@media only screen and (min-device-width: 960px) {
+  main {
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+  }
+  .contact {
+    color: #ffcaa6;
+    display: grid;
+    justify-content: space-evenly;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .info {
+    margin: 0;
+  }
+
+  .add {
+    display: grid;
+    grid-template-columns: 8% 30% 60%;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: -8rem;
+    line-height: 2.5rem;
+  }
+  .header::before {
+    content: "CONTACT ME";
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 700;
+    opacity: 0.1;
+    top: 1.5rem;
+    right: 18rem;
+  }
+  .download {
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    border: 0.125rem solid #41c200;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1.875rem;
+    background: transparent;
+    color: #ffcaa6;
+    font-size: 0.9375;
+    font-weight: 750;
+    cursor: pointer;
+  }
+  .download-btn {
+    height: 2.8125rem;
+    width: 2.8125rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.872rem;
+  }
+  .download:hover {
+    color: #41c200;
+    border: 0.1875rem solid #41c200;
+  }
+  .buttons {
+    display: grid;
+    gap: 4rem;
+    padding: 2rem;
+  }
+  .details > form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  form input {
+    border-radius: 20px;
+    height: 2.5rem;
+  }
+}
+@media only screen and (min-device-width: 960px) {
+  main {
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+    margin-top: 3em;
+    padding: 2rem;
+  }
+  .contact {
+    color: #ffcaa6;
+    display: grid;
+    justify-content: space-evenly;
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .info {
+    margin: 0;
+  }
+
+  .add {
+    display: grid;
+    grid-template-columns: 8% 30% 60%;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: -8rem;
+    line-height: 2.5rem;
+  }
+  .header::before {
+    content: "CONTACT ME";
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 700;
+    left: 4.5em;
+  }
+  .download {
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    border: 0.125rem solid #41c200;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1.875rem;
+    background: transparent;
+    color: #ffcaa6;
+    font-size: 0.9375;
+    font-weight: 750;
+    cursor: pointer;
+  }
+  .download-btn {
+    height: 2.8125rem;
+    width: 2.8125rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.872rem;
+  }
+  .download:hover {
+    color: #41c200;
+    border: 0.1875rem solid #41c200;
+  }
+  .buttons {
+    display: grid;
+    gap: 4rem;
+    padding: 2rem;
+    justify-content: flex-end;
+  }
+  .details > form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  form input {
+    border-radius: 20px;
+    height: 2.5rem;
+  }
+  .mode {
+    height: 5rem;
+    display: fixed;
+    position: absolute;
+    top: 2rem;
+    right: 0.1rem;
+    overflow: auto;
+  }
+}

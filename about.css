@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  font-family: "Secular One", sans-serif;
+  background: url(./img/Dark-theme.jpg);
+  background-size: cover;
+}
+.heading {
+  color: #ffcaa6;
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+.name {
+  color: #41c200;
+}
+.heading::after {
+  content: "ABOUT ME";
+  font-size: 5rem;
+  position: absolute;
+  top: 2rem;
+  font-weight: 700;
+  opacity: 0.1;
+  padding: 0;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 50% 40% 10%;
+  max-height: 40rem;
+}
+.info {
+  display: grid;
+  place-content: center;
+  font-size: 1.6875rem;
+  font-weight: 700;
+  font-style: normal;
+  padding: 5rem;
+  color: #ffcaa6;
+  padding-left: 10rem;
+  padding-top: 5rem;
+}
+.info-1,
+.info-2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+.resume {
+  padding: 2rem 0;
+}
+.download {
+  width: 15rem;
+  height: 3rem;
+  display: flex;
+  border: 0.125rem solid #41c200;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1.875rem;
+  background: black;
+  color: #ffcaa6;
+  font-size: 0.9375;
+  font-weight: 750;
+  cursor: pointer;
+}
+.download-btn {
+  height: 2.8125rem;
+  width: 2.8125rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.872rem;
+}
+.download:hover {
+  color: #41c200;
+  border: 0.1875rem solid #41c200;
+}
+.stat {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 3rem;
+  gap: 1rem;
+}
+.stat > div {
+  display: grid;
+  border: 0px solid #41c200;
+  height: 12rem;
+  color: #ffcaa6;
+  font-size: 2rem;
+  justify-content: start;
+  align-items: center;
+  padding: 1.5rem;
+  box-shadow: 0 5px 10px #41c200;
+  border-radius: 10px;
+}
+.stat > div:hover {
+  box-shadow: 0 5px 10px #41c200;
+}
+.stat-head {
+  color: #41c200;
+}
+.stat-para {
+  font-size: large;
+  font-weight: 700;
+}
+.buttons {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  height: 3.4375rem;
+  width: 3.4375rem;
+  background-color: #0c242b;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  font-size: 1.875rem;
+}
+.wrapper:hover {
+  background-color: #41c200;
+  transition: 250ms ease-in-out;
+  color: black;
+}
+.extra-one {
+  display: grid;
+  place-content: center;
+  color: #ffcaa6;
+  font-size: 2rem;
+}
+.extra-one > div {
+  padding: 2rem;
+  height: 40vh;
+  width: 80vw;
+  text-align: center;
+  border: 0px solid black;
+  margin: 1rem;
+  box-shadow: 0 5px 10px #41c200;
+  border-radius: 10px;
+}
+.extra-one div h1 {
+  color: #41c200;
+  font-weight: 600;
+}
+.extra-one div p {
+  font-weight: 40;
+}
+.hobi {
+  display: grid;
+  place-content: center;
+  color: #ffcaa6;
+  font-size: 2rem;
+}
+.hobi > div {
+  padding: 2rem;
+  height: 40vh;
+  width: 80vw;
+  text-align: center;
+  border: 0px solid black;
+  margin: 1rem;
+  box-shadow: 0 5px 10px #41c200;
+  border-radius: 10px;
+}
+.games,
+.sports,
+.crime {
+  display: grid;
+}
+.games > div {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.games span img {
+  justify-content: space-between;
+  height: 10rem;
+  width: 12rem;
+  background-color: transparent;
+}
+.sports > div {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.sports span img {
+  justify-content: space-between;
+  height: 10rem;
+  width: 12rem;
+  background-color: transparent;
+}
+.crime > div {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+.crime span img {
+  justify-content: space-between;
+  height: 10rem;
+  width: 12rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px #41c200;
+  border: 0px solid black;
+}
